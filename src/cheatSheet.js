@@ -39,3 +39,11 @@ const firstItem = exampleArray[0]; // firstItem === "first"
 // You can reassign array values with the index notatiion
 
 exampleArray[1] = "changed"; // exampleArray === ["first", "changed", "second"]
+
+// You can iterate over an array easily like this:
+
+const iterateOverArray = array => {
+  for (let i = 0; i < array.length; i++) {
+    const elementInArray = array[i]; // No you can do something with this item
+  }
+};
