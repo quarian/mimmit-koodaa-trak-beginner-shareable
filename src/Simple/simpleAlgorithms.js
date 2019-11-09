@@ -1,18 +1,16 @@
+/**
+ * Implement an algorithm to find the maximum value from the array
+ */
 export const findMax = arrayLike => {
-  let max = arrayLike[0];
-  for (let i = 0; i < arrayLike.length; i++) {
-    if (arrayLike[i] > max) {
-      max = arrayLike[i];
-    }
-  }
-  return max;
+  return -1;
 };
 
+/**
+ * Implement an algorithm that finds the index of the given target
+ * From the given array. If the target is not found in the array,
+ * return -1
+ *
+ */
 export const linearSearch = (arrayLike, target) => {
-  for (let i = 0; i < arrayLike.length; i++) {
-    if (arrayLike[i] === target) {
-      return i;
-    }
-  }
   return -1;
 };
