@@ -1,7 +1,6 @@
 import { swap, cloneArray, findMinIndex } from "./SortingUtils";
 
 export const bubbleSort = array => {
-  // bubble sort
   const newArray = cloneArray(array);
   for (let i = 0; i < newArray.length; i++) {
     for (let j = 0; j < newArray.length; j++) {
