@@ -3,7 +3,7 @@ import { generateRandomArray } from "./SortingUtils";
 import { testSortingFunction, testSortingPerformance } from "./SortingTests";
 import { TestVisualisation } from "../TestFrameWork/TestVisualisation";
 import {
-  naiveSort,
+  bubbleSort,
   insertionSort,
   quickSort,
   selectionSort
@@ -42,7 +42,7 @@ export const SortingPage = () => {
         </ul>
       </p>
       <SortingAlgorithmExample
-        sortFunction={naiveSort}
+        sortFunction={bubbleSort}
         title="Bubble sort algorithm"
         description="Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order."
         readMore="https://www.geeksforgeeks.org/bubble-sort/"
