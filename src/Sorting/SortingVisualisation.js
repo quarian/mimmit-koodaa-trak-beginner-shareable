@@ -15,7 +15,7 @@ export const SortingPage = () => {
   return (
     <div>
       <h1>Sorting is a common problem faced in all kinds of applications</h1>
-      <h2>Here are 3 sorting methods to implement.</h2>
+      <h2>Here are 4 sorting methods to implement.</h2>
       <p>
         Pay attention to the different performance of the implemented
         algorithms.<br></br>
