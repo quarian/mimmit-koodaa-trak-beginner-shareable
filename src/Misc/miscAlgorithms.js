@@ -1,31 +1,17 @@
+/**
+ * Implement an algorithm to find the  length of thelongest
+ * sequence in an array. For example, the length of the
+ * longest sequence in array [1, 3, 3, 2] is 2 (the two threes)
+ * in the middle
+ */
 export const findLongestSequence = arrayLike => {
-  let currentSequence = 0;
-  let longetsSequence = 0;
-  let currentElement = "";
-  let previousElement = "";
-  for (let i = 0; i < arrayLike.length; i++) {
-    currentElement = arrayLike[i];
-    if (previousElement === "" || currentElement === previousElement) {
-      currentSequence += 1;
-    } else if (currentElement !== previousElement) {
-      if (currentSequence > longetsSequence) {
-        longetsSequence = currentSequence;
-      }
-      currentSequence = 1;
-    }
-    previousElement = currentElement;
-  }
-  return longetsSequence > currentSequence ? longetsSequence : currentSequence;
+  return 0;
 };
 
+/**
+ * Implement an algorithm that detects if a given string is a
+ * palindrome (same string forwards and backwards).
+ */
 export const detectPalindrome = palindromeCandidate => {
-  let i = 0;
-  let j = palindromeCandidate.length - 1;
-  for (i; i < palindromeCandidate.length / 2; i++) {
-    if (palindromeCandidate[i] !== palindromeCandidate[j]) {
-      return false;
-    }
-    j--;
-  }
-  return true;
+  return false;
 };
