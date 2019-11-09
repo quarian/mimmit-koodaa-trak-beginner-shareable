@@ -7,7 +7,7 @@ It offers visualizations and boilerplate to help workshop participants to write 
 
 ## What's inside?
 
-In the different folders (`Misc`, `Stack` and `Sorting`) you'll find differnet visaulisations and skeleton implementations
+In the different folders (`Misc`, `Stack`, `Simple` and `Sorting`) you'll find differnet visaulisations and skeleton implementations
 of the algorithms. Once you start implementing them you can use the visualisations to test them.
 
 If you are present at the workshop, the instructors will guide you. If you are learning on your own, take you time
