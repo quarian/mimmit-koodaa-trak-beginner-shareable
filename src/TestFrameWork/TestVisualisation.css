@@ -1,0 +1,12 @@
+.TestResultContainer div {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.ResultRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 4rem;
+  border: 1px solid #00ff41;
+}

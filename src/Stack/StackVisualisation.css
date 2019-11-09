@@ -1,0 +1,33 @@
+.StackContainer div {
+  margin: 2rem 0;
+}
+
+.StackContainer h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.StackVisualisationContainer {
+  padding: 1rem;
+  border: 1px solid #00ff41;
+}
+
+.StackVisualisation button {
+  margin-right: 1rem;
+}
+
+.Stack {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-grow: 1;
+  margin: 0 !important;
+}
+
+.StackItem {
+  padding: 0.3rem;
+  font-weight: bold;
+  font-size: large;
+  border: 1px solid #00ff41;
+  margin: 0.2rem 0;
+}
