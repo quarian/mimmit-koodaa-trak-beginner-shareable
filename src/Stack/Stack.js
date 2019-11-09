@@ -7,19 +7,20 @@ export class Stack {
     this.stack = stack ? stack.getStack() : [];
   }
   push(element) {
-    // Adds a given element to the stack
-    this.stack.push(element);
+    // Adds a given element to the stack. Add the implementation below.
   }
   pop() {
-    // Get the last inserted element in a stack and remove it from the stack
-    return this.stack.pop();
+    // Get the last inserted element in a stack and remove it from the stack. Add the proper implementation below.
+    return -1;
   }
   peek() {
     // Shows the last inserted element in a stack
     // e.g. the stack has 5 elements, so we know that the stack has elements in index positions 0 1 2 3 and 4
     // So when we count the length of the stack we receive 5 and if we subtract by 1 (because the first index is 0, not 1!)
     // we get the position of the last element in the stack
-    return this.stack[this.stack.length - 1];
+
+    // Add the proper implementation below
+    return -1;
   }
   getStack() {
     // Shows the current stack
@@ -27,10 +28,11 @@ export class Stack {
   }
 }
 
+// There are few bugs in the function below. Can you find them?
 export const checkParenthesisBalance = parenthesis => {
   // https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-an-expression/
   const stack = new Stack(); // We create a new stack using the class Stack
-  for (let i = 0; i < parenthesis.length; i++) {
+  for (let i = 1; i < parenthesis.length; i++) {
     // Remember, in programming 0 is the first index number!
     // What is a for loop? https://www.w3schools.com/js/js_loop_for.asp
     // How are we passing the parentheses that we wrote in the input text on our page?
@@ -47,13 +49,13 @@ export const checkParenthesisBalance = parenthesis => {
       if (
         (popped === "(" && current !== ")") ||
         (popped === "[" && current !== "]") ||
-        (popped === "{" && current !== "}") ||
+        (popped === "{" && current !== ")") ||
         !popped
       ) {
-        // if current is ) popped needs to be (
+        // if current is ) popped needs to be ( etc
         return false;
       }
     }
   }
-  return !stack.pop();
+  return stack.pop();
 };
